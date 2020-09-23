@@ -233,10 +233,7 @@ namespace Treblle
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")); //ACCEPT header
                 client.DefaultRequestHeaders.Add("x-api-key", request.ApiKey);
 
-                //var response = await client.PostAsync("https://rocknrolla.treblle.com", data);
                 await client.PostAsync("https://rocknrolla.treblle.com", data);
-                //var resp = response.Content.ReadAsStringAsync();
-                //var res = resp.Result;
                 #endregion
             }
             catch (Exception ex)
